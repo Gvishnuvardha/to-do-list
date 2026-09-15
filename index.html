@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-dos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <div class="header">
+            <div>
+                <h1>To-dos</h1>
+                <p id="taskCount" class="task-count">0 to-dos</p>
+            </div>
+            <button id="menuBtn" class="menu-btn">&#8942;</button>
+        </div>
+
+        <!-- Filter Select Dropdown -->
+        <div class="filter-wrapper">
+            <select id="filterSelect">
+                <option value="all">All Tasks</option>
+                <option value="active">Active Tasks</option>
+                <option value="completed">Completed Tasks</option>
+            </select>
+        </div>
+
+        <!-- Task Lists Container -->
+        <div class="tasks-wrapper">
+            <!-- Active/Pending Tasks -->
+            <ul id="activeTaskList" class="task-list"></ul>
+
+            <!-- Done Section -->
+            <div id="doneSection" class="done-section hidden">
+                <h2 id="doneHeader">Done (0)</h2>
+                <ul id="completedTaskList" class="task-list"></ul>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation Bar -->
+        <div class="bottom-nav">
+            <div class="nav-item">
+                <span class="nav-icon">&#128196;</span>
+                <span>Notes</span>
+            </div>
+            <div class="nav-item active">
+                <span class="nav-icon">&#9745;</span>
+                <span>To-dos</span>
+            </div>
+        </div>
+
+        <!-- Floating Add Button -->
+        <button id="fabBtn" class="fab">+</button>
+    </div>
+
+    <!-- Input Modal / Prompt Overlay -->
+    <div id="taskModal" class="modal hidden">
+        <div class="modal-content">
+            <h3 id="modalTitle">New To-do</h3>
+            <input type="text" id="taskInput" placeholder="Enter task title...">
+            <div class="modal-actions">
+                <button id="cancelModalBtn" class="btn-cancel">Cancel</button>
+                <button id="saveTaskBtn" class="btn-save">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
