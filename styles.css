@@ -143,7 +143,7 @@ body {
 /* Card Action Buttons */
 .card-actions {
     display: flex;
-    gap: 16px;
+    gap: 18px;
 }
 
 .icon-btn {
@@ -151,7 +151,7 @@ body {
     border: none;
     color: #888888;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 25px;
     padding: 4px;
 }
 
