@@ -105,11 +105,11 @@ function renderTasks() {
         }
     });
 
-    taskCount.textContent = `${tasks.length} to - dos`;
+    taskCount.textContent = `${ tasks.length } to - dos`;
 
     if (completedCount > 0 && filter !== 'active') {
         doneSection.classList.remove('hidden');
-        doneHeader.textContent = `Done(${completedCount})`;
+        doneHeader.textContent = `Done(${ completedCount })`;
     } else {
         doneSection.classList.add('hidden');
     }

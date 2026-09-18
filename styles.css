@@ -1,5 +1,4 @@
-﻿
-* {
+﻿* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -42,14 +41,6 @@ body {
     color: #888888;
     font-size: 14px;
     margin-top: 2px;
-}
-
-.menu-btn {
-    background: none;
-    border: none;
-    color: #ffffff;
-    font-size: 22px;
-    cursor: pointer;
 }
 
 .filter-wrapper {
@@ -150,8 +141,8 @@ body {
     cursor: pointer;
     padding: 6px;
     font-size: 24px;
-    width: 35px;
-    height: 35px;
+    width: 36px;
+    height: 36px;
 }
 
     .icon-btn:hover {
@@ -201,7 +192,7 @@ body {
     background-color: #0d0d0d;
     border-top: 1px solid #1f1f1f;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 10px 0;
     z-index: 5;
 }
