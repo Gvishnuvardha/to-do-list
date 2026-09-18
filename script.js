@@ -105,11 +105,11 @@ function renderTasks() {
         }
     });
 
-    taskCount.textContent = `${ tasks.length } to - dos`;
+    taskCount.textContent = `${tasks.length} to-dos`;
 
     if (completedCount > 0 && filter !== 'active') {
         doneSection.classList.remove('hidden');
-        doneHeader.textContent = `Done(${ completedCount })`;
+        doneHeader.textContent = `Done (${completedCount})`;
     } else {
         doneSection.classList.add('hidden');
     }
@@ -134,7 +134,7 @@ function saveTask() {
 
     if (isDuplicate) {
         const confirmAdd = confirm(
-            `You already have a task named "${text}".Do you want to add it again ?`
+            `You already have a task named "${text}". Do you want to add it again?`
         );
 
         if (!confirmAdd) {
